@@ -25,7 +25,7 @@ background-attachment: fixed;">
         <div id="canvasWrapper" class="mb-10 w-screen flex justify-center items-center">
             <button
                 class="text-white p-3 rounded-md font-sans text-xl bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500"
-                onclick="download()" download="newIm.jpg">Download Post</button>
+                onclick="download()">Download Post</button>
         </div>
 
         
@@ -45,7 +45,7 @@ background-attachment: fixed;">
                     var a = document.createElement('a');
                     a.href = canvas.toDataURL("image/jpeg").replace("image/jpeg", "image/octet-stream");
                     a.download = 'Mypost.jpg';
-                    // a.click();
+                    a.click();
                 });
             }
         </script>
